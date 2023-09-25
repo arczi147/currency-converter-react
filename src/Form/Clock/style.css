@@ -1,0 +1,9 @@
+.form__clock {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    color: #606060;
+    text-align: right;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
