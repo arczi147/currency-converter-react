@@ -9,5 +9,6 @@ html {
 body {
   background-image: url(money-background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Merriweather', serif;
 }
