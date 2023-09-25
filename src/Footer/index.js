@@ -1,9 +1,9 @@
 import "./style.css";
 
-const Footer = () => (
+const Footer = ({ content }) => (
     <footer className="footer">
-    *Przelicznik kursu walut na dzień 24.02.2023 godz. 20:52 w Santander Bank.
-</footer>
+        {content}
+    </footer>
 );
 
 export default Footer;
