@@ -1,4 +1,6 @@
-.form__clock {
+import styled from "styled-components";
+
+export const Time = styled.p`
     font-family: 'Inconsolata', monospace;
     font-size: 15px;
     color: #606060;
@@ -6,4 +8,4 @@
     margin-top: 0px;
     margin-right: 20px;
     margin-bottom: 50px;
-}
+`;
