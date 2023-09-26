@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { currencies } from "../currencies";
-import "./style.css";
 import Result from "./Result";
 import Clock from "./Clock";
+import { StyledForm, Fieldset, Legend, Label, Currency, Amount, Button } from "./styled";
 
 const Form = () => {
 
@@ -26,15 +26,15 @@ const Form = () => {
     }
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <fieldset className="form__fieldset">
+        <StyledForm onSubmit={onFormSubmit}>
+            <Fieldset>
                 <Clock />
-                <legend className="form__legend">Przelicznik walut</legend>
+                <Legend>Przelicznik walut</Legend>
                 <p>
                     <label>
-                        <span className="form__labelText"><strong>Waluta:</strong></span>
-                        <select
-                            className="form__currency"
+                        <Label><strong>Waluta:</strong></Label>
+                        <Currency
+                            select
                             name="desiredCurrency"
                             value={currency}
                             onChange={(event) => setCurrency(event.target.value)}>
@@ -46,15 +46,15 @@ const Form = () => {
                                     {currency.name} ({currency.short})
                                 </option>
                             ))};
-                        </select>
+                        </Currency>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <span className="form__labelText"><strong>Kwota:</strong></span>
-                        <input
+                        <Label><strong>Kwota:</strong></Label>
+                        <Amount
+                            input
                             value={amount}
-                            className="form__amount"
                             type="number"
                             name="amount"
                             min="0.01"
@@ -64,18 +64,18 @@ const Form = () => {
                     </label>
                 </p>
                 <p>
-                    <button
-                        className="form__button"
-                        type="submit">Oblicz!</button>
+                    <Button
+                        type="submit">Oblicz!
+                    </Button>
                 </p>
                 <p>
-                    <span
-                        className="form__labelText form__labelText--result">
+                    <Label
+                        result>
                         <strong>Wynik: <Result result={result} /></strong>
-                    </span>
+                    </Label>
                 </p>
-            </fieldset>
-        </form>
+            </Fieldset>
+        </StyledForm>
     )
 };
 
