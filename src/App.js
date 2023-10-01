@@ -10,9 +10,7 @@ const date = useCurrentDate();
   return (
     <Container>
       <Form date={date}/>
-      <Footer
-        content="*Przelicznik kursu walut na dzień 24.02.2023 godz. 20:52 w Santander Bank."
-      />
+      <Footer />
     </Container>
   )
 }

@@ -1,8 +1,8 @@
 import { Content } from "./styled";
 
-const Footer = ({ content }) => (
+const Footer = () => (
     <Content>
-        {content}
+        *Przelicznik kursu walut na dzień 24.02.2023 godz. 20:52 w Santander Bank.
     </Content>
 );
 
