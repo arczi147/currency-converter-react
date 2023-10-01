@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Time = styled.p`
     font-family: 'Inconsolata', monospace;
     font-size: 15px;
-    color: #606060;
+    color: ${({ theme }) => theme.color.scorpion};
     text-align: right;
     margin-top: 0px;
     margin-right: 20px;

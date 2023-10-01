@@ -6,18 +6,18 @@ export const StyledForm = styled.form`
 `;
 
 export const Fieldset = styled.fieldset`
-    border: 1px solid #ccc;
+    border: 1px solid ${({ theme }) => theme.color.silver};
     text-align: center;
     padding: 20px;
     padding-top: 5px;
     border-radius: 10px;
     margin: 30px 0;
-    background-color: rgb(234, 234, 234);
+    background-color: ${({ theme }) => theme.color.gallery};
 `;
 
 export const Legend = styled.legend`
-    background-color: rgb(227, 151, 0);
-    color: white;
+    background-color: ${({ theme }) => theme.color.tangerine};
+    color: ${({ theme }) => theme.color.white};
     border-radius: 10px;
     padding: 15px;
     text-align: left;
@@ -35,7 +35,7 @@ export const Label = styled.span`
 `;
 
 export const Currency = styled.select`
-    border: 1px solid #ccc;
+    border: 1px solid ${({ theme }) => theme.color.silver};
     padding: 10px;
     width: 100%;
     max-width: 400px;
@@ -43,7 +43,7 @@ export const Currency = styled.select`
 `;
 
 export const Amount = styled.input`
-    border: 1px solid #ccc;
+    border: 1px solid ${({ theme }) => theme.color.silver};
     padding: 10px;
     width: 100%;
     max-width: 400px;
@@ -53,16 +53,16 @@ export const Amount = styled.input`
 export const Button = styled.button`
     width: 100%;
     border: none;
-    background-color: rgb(227, 151, 0);
-    color: white;
+    background-color: ${({ theme }) => theme.color.tangerine};
+    color: ${({ theme }) => theme.color.white};
     padding: 15px;
     border-radius: 10px;
 
     &:hover {
-        background-color: rgb(209, 140, 0);
+        background-color: ${({ theme }) => theme.color.pirateGold};
     }
 
     &:active {
-        background-color: rgb(195, 130, 0);
+        background-color: ${({ theme }) => theme.color.darkerPirateGold};
     }
 `;
