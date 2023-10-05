@@ -7,6 +7,7 @@ export const theme = {
         pirateGold: "#d18c00",
         darkerPirateGold: "#c38200",
         scorpion: "#606060",
+        red: "#f00",
     },
     breakpoint: {
         mobileMax: 767,
