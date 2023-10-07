@@ -8,12 +8,8 @@ https://arczi147.github.io/currency-converter-react/
 
 ## What does the website enable?
 
-The website allows you to convert into polski zloty nowy (PLN) the following currencies:
-- euro (EUR);
-- Great Britain pound (GBP);
-- United States dollar (USD).
-
-The course is not updated. The values that are calculated come from the Bank Santader exchange office of February 24, 2023 at 20:52.
+The website allows you to convert from dollar (USD) almost 180 currencies.
+The rate is updated daily.
 
 ## What was used in this project?
 
@@ -25,6 +21,7 @@ The course is not updated. The values that are calculated come from the Bank San
 - React
 - Node
 - Buble
+- API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
