@@ -66,3 +66,13 @@ export const Button = styled.button`
         background-color: ${({ theme }) => theme.color.darkerPirateGold};
     }
 `;
+
+export const Failure = styled.p`
+    line-height: 1.5;
+`;
+
+export const Loading = styled.p`
+    color: ${({ theme }) => theme.color.red};
+    text-align: left;
+    line-height: 1.5;
+`;

@@ -3,24 +3,23 @@ import { useState, useEffect } from "react";
 export const useRatesData = () => {
     const [ratesData, setRatesData] = useState({
         status: "loading",
-        quotes: "",
     });
 
     useEffect(() => {
         setTimeout(() => {
             (async () => {
                 try {
-                    const response = await fetch("http://api.exchangerate.host/list?access_key=f7c58e000fbd11ee454e07d5cf103e42");
+                    const response = await fetch("https://api.currencyapi.com/v3/latest?apikey=cur_live_ljaMhWjmrFyzL74kN0gQp8qORknC2imADnz2hNfx");
 
                     if (!response.ok) {
                         throw new Error(response.statusText);
                     }
 
-                    const { quotes } = await response.json();
+                    const { data } = await response.json();
 
                     setRatesData({
                         status: "success",
-                        quotes,
+                        data,
                     });
 
                 } catch {
