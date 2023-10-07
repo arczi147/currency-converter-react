@@ -82,7 +82,7 @@ const Form = () => {
                                     </label>
                                 </p>
                                 <p>
-                                    <Button>Przelicz !</Button>
+                                    <Button>Oblicz!</Button>
                                 </p>
                                 <p>
                                     <Label
